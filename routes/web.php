@@ -29,8 +29,7 @@ Route::get("/kenalan/{nama}/{npm}", function($nama, $npm){
     return view("hallo", $data);
 });
 
-//Route ke halaman fakultas
-Route::get("/fakultas", function(){
-    $data = ["fakultas" => ["Fasilkom Rekayasa", "Fak. Ekonomi"]];
-    return view("fakultas.index", $data);
-});
+Route::get('/mahasiswa/insert', [MahasiswaController::class, 'insert']);
+Route::get('/mahasiswa/update', [MahasiswaController::class, 'update']);
+Route::get('/mahasiswa/delete', [MahasiswaController::class, 'delete']);
+Route::get('/mahasiswa/select', [MahasiswaController::class, 'select']);
