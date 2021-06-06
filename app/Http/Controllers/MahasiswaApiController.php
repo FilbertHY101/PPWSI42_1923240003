@@ -98,7 +98,7 @@ class MahasiswaApiController extends Controller
     public function destroy($id)
     {
         $mahasiswa = Mahasiswa::find($id);   //cari datanya
-        if($mahasiswa){                         //jika ada?
+        if($mahasiswa){                      //jika ada?
             $mahasiswa->delete();           //delete
             $result = [
                 "status" => true,
