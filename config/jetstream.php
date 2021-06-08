@@ -64,5 +64,3 @@ return [
 
 ];
 
-# token
-# bclEXQg7h78X6TXqKg8WK6YXTWWjpTQjEljoHfwE
